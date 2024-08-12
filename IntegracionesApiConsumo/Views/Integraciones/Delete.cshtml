@@ -1,0 +1,25 @@
+﻿@model IntegracionesApiConsumo.Models.Integracion
+
+<h1>Eliminar Integración</h1>
+
+<h3>¿Está seguro de que desea eliminar esta integración?</h3>
+<div>
+    <h4>Integración</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">ID</dt>
+        <dd class="col-sm-10">@Model.Id</dd>
+        <dt class="col-sm-2">Name</dt>
+        <dd class="col-sm-10">@Model.Name</dd>
+        <dt class="col-sm-2">Cliente</dt>
+        <dd class="col-sm-10">@Model.Cliente</dd>
+        <dt class="col-sm-2">Us</dt>
+        <dd class="col-sm-10">@Model.Us</dd>
+    </dl>
+</div>
+
+<form asp-action="DeleteConfirmed">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Eliminar</button>
+    <a asp-action="Index">Cancelar</a>
+</form>

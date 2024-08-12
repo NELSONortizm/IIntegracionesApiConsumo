@@ -1,0 +1,19 @@
+﻿@model IntegracionesApiConsumo.Models.Integracion
+
+<h1>Crear Nueva Integración</h1>
+
+<form asp-action="Create">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="Cliente"></label>
+        <input asp-for="Cliente" />
+    </div>
+    <div>
+        <label asp-for="Us"></label>
+        <input asp-for="Us" />
+    </div>
+    <button type="submit">Crear</button>
+</form>
